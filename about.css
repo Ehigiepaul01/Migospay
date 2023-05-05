@@ -302,9 +302,9 @@ span {
     flex-direction: column;
   }
 
-  .menu li a:hover {
+  /* .menu li a:hover {
     display: none;
-  }
+  } */
 
   .menu {
     display: flex;

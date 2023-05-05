@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@300;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ a {
 
 body {
   background-color: var(--lightgray);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-section {
@@ -32,7 +32,6 @@ body {
 .container {
   margin-left: 3rem;
 }
-
 
 header {
   background-color: #fff;
@@ -50,12 +49,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo img {
   max-height: 70px;
-  width: 200%;
 }
 
 .menu {
@@ -91,7 +89,7 @@ nav {
   display: none;
 }
 
-.bar {
+.hamburger-menu .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -99,7 +97,6 @@ nav {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
 }
-
 
 /* Hero Section Styling */
 .hero-container {
@@ -113,14 +110,14 @@ nav {
 .hero-container h1 {
   font-weight: bold;
   font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-container p {
   margin: 1.5rem 0;
   line-height: 1.9rem;
   font-size: 1.3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .left {
@@ -139,8 +136,6 @@ nav {
   max-width: 100%;
   margin-top: 5rem;
 }
-
-
 
 /* Info Section Styling */
 .info-section {
@@ -218,7 +213,6 @@ p {
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin-bottom: 2rem;
- 
 }
 
 .list {
@@ -240,7 +234,7 @@ p {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   /* align-items: center; */
 }
@@ -252,7 +246,7 @@ p {
 
 .solid {
   color: var(--white);
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 50%;
   margin-right: 1rem;
   background-color: purple;
@@ -328,7 +322,7 @@ p {
 
 .footer-center li a:hover {
   color: var(--yellow);
-} 
+}
 
 .info {
   margin-bottom: 10px;
@@ -377,7 +371,14 @@ span {
   }
 }
 
-@media (max-width: 768px) {
+/* Media Query */
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .hero-container h1 {
     font-size: 1.8rem;
   }
@@ -399,6 +400,10 @@ span {
     margin-top: 2rem;
   }
 
+  .right .image img {
+    margin-top: 0;
+  }
+
   h2 {
     text-align: center;
   }
@@ -418,14 +423,15 @@ span {
   .text {
     margin: 0 0 2rem;
     max-width: 400px;
-    text-align: center
+    text-align: center;
   }
 
   .footer-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .footer-left, .footer-right {
+  .footer-left,
+  .footer-right {
     text-align: center;
   }
 
@@ -435,33 +441,62 @@ span {
 
   .nav-list {
     display: none;
+    margin: auto;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-list.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu li a:hover {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 
   .hamburger-menu {
     display: block;
     cursor: pointer;
+    z-index: 100;
   }
 
-  .hamburger-menu.open .bar:nth-child(2) {
+  .hamburger-menu.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger-menu.open .bar:nth-child(1) {
+  .hamburger-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburger-menu.open .bar:nth-child(3) {
+  .hamburger-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
 }
 
 @media (max-width: 600px) {
+  .right .image img {
+    max-width: 70%;
+  }
+
   .cta-details h1 {
     font-size: 1.2rem;
     width: 80%;
     margin: auto;
-  padding-bottom: 2rem;
+    padding-bottom: 2rem;
   }
 
   h2 {
@@ -478,7 +513,7 @@ span {
   }
 
   .text h1 {
- font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .text p {

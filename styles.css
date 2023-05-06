@@ -49,12 +49,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
 }
 
 .logo img {
-  max-height: 80px;
-  /* width: 50%; */
+  max-height: 100px;
+  width: 70%;
 }
 
 .menu {
@@ -75,8 +74,6 @@ nav {
 .menu li a {
   color: #333;
   text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   padding: 10px;
   border-radius: 5px;
@@ -238,7 +235,6 @@ p {
   flex-direction: row;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  /* align-items: center; */
 }
 
 .text h1 span {

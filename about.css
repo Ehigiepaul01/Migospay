@@ -45,12 +45,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
 }
 
 .logo img {
-  max-height: 70px;
-  /* width: 200%; */
+  max-height: 100px;
+  width: 70%;
 }
 
 .menu {
@@ -71,8 +70,6 @@ nav {
 .menu li a {
   color: #333;
   text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   padding: 10px;
   border-radius: 5px;
@@ -172,7 +169,6 @@ nav {
 .details h4 {
   font-size: 1.4rem;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
 }
 
 .details h1 {
@@ -183,7 +179,6 @@ nav {
 }
 
 .details p {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 2rem;
@@ -207,7 +202,6 @@ button[type="submit"]:hover {
 }
 
 /* Footer Styling */
-
 .footer {
   background-color: var(--black);
   color: var(--white);
@@ -302,10 +296,6 @@ span {
     display: flex;
     flex-direction: column;
   }
-
-  /* .menu li a:hover {
-    display: none;
-  } */
 
   .menu {
     display: flex;

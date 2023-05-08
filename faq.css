@@ -229,6 +229,7 @@ span {
 @media screen and (max-width: 600px) {
   .hero-container {
     margin-top: 3rem;
+    margin-left: 2rem;
   }
   .footer-container {
     grid-template-columns: repeat(1, 1fr);

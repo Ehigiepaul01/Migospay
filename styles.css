@@ -370,10 +370,27 @@ span {
 }
 
 /* Media Query */
+@media screen and (max-width: 1440px) {
+  .right .image img {
+    margin-left: 12rem;
+  }
+
+  .text-container {
+    margin-left: 6rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   .hero-container {
     margin-top: 7rem;
   }
+
+  .right .image img {
+    margin-left: 0;
+  }
+
+ .download img {
+  margin-bottom: .5rem;
+ }
 }
 
 @media screen and (max-width: 768px) {

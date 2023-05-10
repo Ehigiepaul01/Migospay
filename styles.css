@@ -523,6 +523,10 @@ span {
     padding-top: 2rem;
   }
 
+  .text-container {
+    margin-left: 2rem;
+  }
+
   .text h1 {
     font-size: 1.2rem;
   }
